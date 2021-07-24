@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Crash Course</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+  </head>
+  <body>
+    <div class="cont-1">
+      <h2>Challenge 1: Your Age in Days</h2>
+      <div class="flex-cont-1">
+        <div>
+          <button type="button" class="btn btn-primary" onclick="ageInDays()" name="click me">Click Me</button>
+        </div>
+        <div>
+          <button type="button" class="btn btn-danger" onclick="reset()" name="reset">Reset</button>
+        </div>
+      </div>
+
+      <div class="flex-cont-1">
+        <div id="flex-cont-result"></div>
+      </div>
+    </div>
+
+    <div class="cont-2">
+      <h2>Challenge 2: Cat Generator</h2>
+      <div class="flex-cont-2">
+        <button type="button" class="btn btn-success" onclick="generateCat()">Generate Cat</button>
+      </div>
+      <div class="flex-cont-2" id="flex-cat-gen"></div>
+    </div>
+
+    <div class="cont-3">
+      <h2>Challenge 3: Rock, Paper, Scissors</h2>
+      <div class="flex-cont-3" id="flex-cont-rps">
+        <img id="rock" src="static/images/rock.png" height="150" width="150" onclick="rpsGame(this)" alt="rock">
+        <img id="paper" src="static/images/paper.png" height="150" width="150" onclick="rpsGame(this)" alt="paper">
+        <img id="scissors" src="static/images/scissors.png" height="150" width="150" onclick="rpsGame(this)" alt="scissors">
+      </div>
+    </div>
+
+    <div class="cont-4">
+      <h2>Challenge 4: Change the Color of All Buttons!</h2>
+      <div class="flex-cont-4">
+        <form action="">
+          <select name="dragdown" id="bgcolor" onchange="buttonColorChange(this)">
+            <option value="random">Random</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="reset">Reset</option>
+          </select>
+        </form>
+        <button type="button" class="btn btn-primary">Wee!</button>
+        <button type="button" class="btn btn-danger">Yahoo!</button>
+        <button type="button" class="btn btn-warning">Google!</button>
+        <button type="button" class="btn btn-success">Facebook!</button>
+      </div>
+    </div>
+
+    <div class="cont-5">
+      <h2>Challenge 5: Blackjack</h2>
+      <h3><span id="bj-result">Let's play!</span></h3>
+      <div class="flex-cont-5-r1">
+        <div id="your-box">
+          <h2>You: <span id="your-bj-result">0</span></h2>
+        </div>
+        <div id="dealer-box">
+          <h2>Dealer: <span id="dealer-bj-result">0</span></h2>
+        </div>
+      </div>
+      <div class="flex-cont-5-r2">
+        <div>
+          <button class="btn-lg btn-primary mr-2" id="bj-hit">Hit</button>
+          <button class="btn-lg btn-warning mr-2" id="bj-stand">Stand</button>
+          <button class="btn-lg btn-danger" id="bj-deal">Deal</button>
+        </div>
+      </div>
+      <div class="flex-cont-5-r3">
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="losses">0</span></td>
+            <td><span id="draws">0</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script type="text/javascript" src="static/js/scripts.js"></script>
+  </body>
+</html>
